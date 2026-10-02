@@ -1,0 +1,50 @@
+.header {
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 293px;
+}
+
+.header__menu{
+  margin: auto;
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.header__logo {
+  margin: auto;
+}
+
+.header__contacts {
+  width: 240px;
+  margin: auto;
+  height: 98px;   
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cover {
+    position: relative;
+    background-image: url(../images/lotus-flower.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    height: 757px;
+    color: white;
+    font-size: 100px;
+    padding: 165px 0 207px 0;
+}
+
+.cover__title-center{
+  margin: auto;
+}
+
+.cover__title-bottom {
+  margin-top: auto;
+}
