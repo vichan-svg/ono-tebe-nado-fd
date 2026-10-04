@@ -120,3 +120,74 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.lots__card-list { /* запуталась со стилями лотов, ИИ помог сделать основы для карточек */
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(334px, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.card {
+  width: 334px; 
+  height: 596px;
+  position: relative; 
+}
+
+.img__film {
+  background-image: url('../images/photo.png');
+  background-size: cover;
+  background-position: center;
+}
+.img__book {
+  background-image: url('../images/photo\ \(1\).png');
+  background-size: cover;
+  background-position: center;
+}
+.img__picture {
+  background-image: url('../images/photo\ \(2\).png');
+  background-size: cover;
+  background-position: center;
+  
+}
+.card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+
+.card_type_film {
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.card_type_book {
+  background-size: cover;
+  background-position: center;
+}
+
+
+.card__title,
+.card__text {
+  color: #fff; 
+  position: absolute;
+  bottom: 20px; 
+  left: 20px;   
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card__text {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
