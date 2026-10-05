@@ -1,11 +1,23 @@
 body {
-  max-width: 1100px;
+  min-height: 100vh; 
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-image: radial-gradient(circle, #ffffff, #fbfafe, #f8f5fc, #f5f0fa, #f2ebf8, #f0e2f8, #eed9f8, #edd0f7, #eac1f9, #e7b2fa, #e4a3fb, #e093fc);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
   text-decoration: none;
 }
 
+.main__content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #fff;
+}
 
 .header {
   display: grid;
@@ -15,6 +27,7 @@ a {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  
 }
 
 .header__menu-links { 
@@ -30,8 +43,6 @@ a {
   line-height: 1;
 }
 
-
-
 .header__menu-link {
   text-decoration: underline;
   color: #000;
@@ -40,7 +51,6 @@ a {
 .header__menu-link-active {
   color:#000;
 }
-
 
 .header__logo {
   width: 148px;
@@ -129,48 +139,41 @@ a {
   margin: 0;
 }
 
-
 .card {
   width: 334px; 
   height: 596px;
   position: relative; 
+  background-size: cover;
+  background-position: center;
 }
 
-.img__film {
-  background-image: url('../images/photo.png');
+.card__film {
+  background-image: url(../images/film.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
-.img__book {
-  background-image: url('../images/photo\ \(1\).png');
+
+.card__book {
+  background-image: url(../images/book.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
-.img__picture {
-  background-image: url('../images/photo\ \(2\).png');
+
+.card__picture {
+  background-image: url(../images/picture.png);
   background-size: cover;
   background-position: center;
-  
+  background-repeat: no-repeat;
 }
+
 .card-link {
   display: block;
   width: 100%;
   height: 100%;
   text-decoration: none;
 }
-
-
-.card_type_film {
-  background-size: cover;
-  background-position: center;
-  
-}
-
-.card_type_book {
-  background-size: cover;
-  background-position: center;
-}
-
 
 .card__title,
 .card__text {
