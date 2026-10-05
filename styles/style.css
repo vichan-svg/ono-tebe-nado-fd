@@ -127,7 +127,20 @@ a {
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.lots {
+  margin: 180px 20px 120px;
+}
+
+.lots__heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-bottom: 27px;
+
 }
 
 .lots__card-list { /* запуталась со стилями лотов, ИИ помог сделать основы для карточек */
@@ -178,19 +191,63 @@ a {
 .card__title,
 .card__text {
   color: #fff; 
-  position: absolute;
-  bottom: 20px; 
-  left: 20px;   
+  position: absolute;  
+  text-align: left;
 }
 
 .card__title {
-  font-size: 24px;
-  font-weight: bold;
   margin: 0;
+  top: 20px;
+  text-decoration: underline;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  top: 48px;
+  left: 40px;
+  right: 40px;
 }
 
 .card__text {
   font-size: 14px;
   margin: 0;
-  opacity: 0.9;
+  bottom: 1px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  left: 40px;
+  right: 40px;
+  bottom: 48px;
+
+}
+/* --- АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ (до 600px) (про media подсказал ИИ)--- */
+@media (max-width: 600px) {
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .cover {
+    padding: 40px 20px;
+  }
+
+  .cover__title span {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cover__title {
+    font-size: 32px;
+  }
+
+  .description__button {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
 }
