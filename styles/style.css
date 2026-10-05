@@ -143,13 +143,14 @@ a {
 
 }
 
-.lots__card-list { /* запуталась со стилями лотов, ИИ помог сделать основы для карточек */
+.lots__card-list { 
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(334px, 1fr));
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -220,6 +221,36 @@ a {
   bottom: 48px;
 
 }
+.lots__look-more-link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-left: 40px;
+}
+
+.about {
+  display: grid;
+
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000; 
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  
+}
+
 /* --- АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ (до 600px) (про media подсказал ИИ)--- */
 @media (max-width: 600px) {
   
