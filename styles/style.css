@@ -243,12 +243,42 @@ a {
 
 .footer {
   display: grid;
-  grid-template-columns: 3fr;
+  grid-template-columns: 33% 33% 33%;
   align-items: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  
+  grid-auto-flow: column;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  padding-left: 50px;
+}
+
+.footer__menu-link {
+  text-decoration: underline;
+  color: #000;
+}
+
+.footer__menu-link-active {
+  color:#000;
+}
+
+.footer__menu-list{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer__social-list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* --- АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ (до 600px) (про media подсказал ИИ)--- */
@@ -260,6 +290,12 @@ a {
     align-items: center;
     padding: 20px;
     grid-template-columns: 1fr;
+  }
+  .header__menu {
+    padding-left: 10px;
+  }
+  .header__contacts {
+    padding-left: 100px;
   }
 
   .cover {
@@ -280,5 +316,16 @@ a {
     width: 100%;
     text-align: center;
     padding: 15px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__contacts {
+    padding-left: 110px;
   }
 }
