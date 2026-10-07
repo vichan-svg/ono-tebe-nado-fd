@@ -81,7 +81,6 @@ a {
   background-image: url(../images/lotus-flower.jpg);
   background-size: cover;
   background-position: center;
-  display: flex;
   height: 757px;
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -89,39 +88,59 @@ a {
 
 }
 
-.cover__title-center {
+.cover__title {
+  display: grid;
+  font-size: 100px;
+  letter-spacing: 30%;
+  font-family: 'Raleway';
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-right: 25px;
+  padding-left: 50px;
+  gap: 19px;
+}
+
+.cover__title-line-tebe {
   margin: auto;
 }
 
+.cover__title-line-nado{
+  display: flex;
+  flex-direction: row-reverse;
+}
 .description{
-  display: flex; 
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
 .description__title{
   font-family: 'Raleway', sans-serif;
-  font-size: 400;
+  font-size: 22px;
+  font-weight: 400;
   text-transform: uppercase;
-  justify-content: space-between;
+  word-spacing: 20px;
+
 }
 
 .description__button {
-  align-self: flex-end;
-  border: 1.5px solid #fff;
-  border-radius: 6px;
-  padding: 16px 32px;
-  background: transparent;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  z-index: 1;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .overlay {
@@ -330,6 +349,7 @@ a {
     align-items: center;
     padding: 20px;
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   .header__menu {
     padding-left: 10px;
@@ -349,7 +369,13 @@ a {
   }
 
   .cover__title {
-    font-size: 32px;
+    font-size: 70px;
+    gap: 80px;
+  }
+
+  .description {
+    flex-direction: column;
+    margin-top: 0;
   }
 
   .description__button {
@@ -377,5 +403,8 @@ a {
 
   .footer__contacts {
     padding-left: 110px;
+  }
+  .footer__social-list {
+    gap: 20px;
   }
 }
