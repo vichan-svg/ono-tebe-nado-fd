@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 body {
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
@@ -29,7 +31,6 @@ a {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 15px;
   background-color: #fff;
 }
 
@@ -37,7 +38,7 @@ a {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 95px;
+  padding: 85px 40px 97px;
   font-weight: 400;
   font-size: 18px;
 }
