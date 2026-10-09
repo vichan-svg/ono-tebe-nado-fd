@@ -239,11 +239,11 @@ a {
   color: #000;
 }
 
-.card__text, 
-.lots__look-more-link { 
+.card__text,
+.lots__look-more-link {
   font-size: 20px;
   font-weight: 400;
-} 
+}
 
 .about__grid {
   display: grid;
@@ -364,6 +364,8 @@ a {
   .cover__title {
     font-size: 70px;
     gap: 80px;
+    padding-right: 14%;
+    padding-left: 4%;
   }
 
   .description {
