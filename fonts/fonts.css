@@ -11,7 +11,7 @@
   font-family: Raleway;
   src: 
     url(./Raleway-Regular.ttf) format('truetype'),
-    url(./Raleway-Bold.woff) format('woff');
+    url(./Raleway-Regular.woff) format('woff');
   font-weight: 400;
   font-display: swap;
 }
