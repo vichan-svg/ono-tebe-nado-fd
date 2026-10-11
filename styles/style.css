@@ -292,10 +292,6 @@ body {
   text-decoration: underline;
 }
 
-.link_active {
-  text-decoration: none;
-}
-
 .footer__social-list {
   display: flex;
   flex-direction: row;
