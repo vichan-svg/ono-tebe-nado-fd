@@ -246,17 +246,11 @@ body {
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
+  margin-bottom: 100px;
 }
 
 .about__grid-right {
   margin: 139px 29px 0 0;
-}
-
-.about_heading {
-  margin-bottom: 100px;
-  font-weight: 700;
-  font-size: 40px;
-  text-transform: uppercase;
 }
 
 .about__text {
